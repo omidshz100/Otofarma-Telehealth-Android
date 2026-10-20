@@ -146,7 +146,7 @@ fun AppRoot(model: AppViewModel = viewModel()) {
 
 @Composable
 private fun LoginScreen(state: UiState, model: AppViewModel) {
-    var email by remember { mutableStateOf(state.email) }
+    var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var showPassword by remember { mutableStateOf(false) }
 
