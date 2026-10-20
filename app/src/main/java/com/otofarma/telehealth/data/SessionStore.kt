@@ -39,7 +39,7 @@ class SessionStore(context: Context) {
     }
 
     companion object {
-        const val BASE_URL = "http://10.122.37.139:8000"
+        const val BASE_URL = "http://10.217.34.186:8000"
         private const val KEY_TOKEN = "token"
         private const val KEY_NAME = "name"
         private const val KEY_EMAIL = "email"
