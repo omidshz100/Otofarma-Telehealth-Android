@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>چهار مرحله تا باز شدن برنامه</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f6f3ec;
+      --card: #fffdf8;
+      --ink: #1c1915;
+      --muted: #5e584e;
+      --line: #e4dccf;
+      --green: #1f7a45;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Vazirmatn, "Noto Naskh Arabic", Tahoma, sans-serif;
+      line-height: 1.75;
+      font-size: 18px;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font-size: 34px; line-height: 1.35; margin: 0 0 12px; }
+    h2 { font-size: 26px; margin: 0 0 8px; }
+    p { margin: 0 0 12px; }
+    .lead { color: var(--muted); max-width: 44em; }
+    .map { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 22px 0 32px; }
+    .map a {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 14px;
+      color: inherit;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .map span { color: var(--muted); }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      margin: 0 0 22px;
+    }
+    .kicker {
+      display: inline-block;
+      background: #e7f3ea;
+      color: var(--green);
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    figure { margin: 14px 0; }
+    img { width: 100%; height: auto; border-radius: 14px; display: block; background: #ddd; }
+    figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+    .pair { display: grid; gap: 12px; }
+    @media (min-width: 800px) { .pair { grid-template-columns: 1fr 1fr; } }
+    .say { background: #f3f7f4; border-radius: 14px; padding: 12px 14px; margin-top: 12px; }
+    .say b { color: var(--green); }
+    .after {
+      background: #1c1915;
+      color: #fffdf8;
+      border-radius: 22px;
+      padding: 22px;
+    }
+    .after p { color: rgba(255,253,248,0.88); }
+    table { width: 100%; border-collapse: collapse; font-size: 16px; }
+    th, td { text-align: right; border-bottom: 1px solid var(--line); padding: 8px 4px; vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>چهار مرحله تا خودِ برنامه</h1>
+    <p class="lead">این همان ترتیبی است که با هم یکی شد. چهار صفحه مال پوستهٔ Otofarma است. با دکمهٔ صفحهٔ چهارم، برنامهٔ معاینه باز می‌شود.</p>
+
+    <nav class="map">
+      <a href="#s1">۱. حوزه</a>
+      <span>←</span>
+      <a href="#s2">۲. تخصص</a>
+      <span>←</span>
+      <a href="#s3">۳. خدمت</a>
+      <span>←</span>
+      <a href="#s4">۴. توضیح و باز کردن</a>
+    </nav>
+
+    <article id="s1">
+      <div class="kicker">مرحلهٔ ۱ — انتخاب حوزه</div>
+      <h2>مثلاً Specialistiche</h2>
+      <p>اولین صفحه چند راه بزرگ است. یکی از آن‌ها <b>Specialistiche</b> است، یعنی کارهای تخصصی. آدم یکی را فشار می‌دهد و وارد همان حوزه می‌شود.</p>
+      <figure>
+        <img src="01-four-ways.png" alt="صفحهٔ اول با چهار تصویر، یکی از آن‌ها Specialistiche" />
+        <figcaption>عکس محو است. نوشتهٔ خوانا همین Specialistiche است. سه راه دیگر را از روی نقاشه می‌شود حدس زد، نه از روی متن.</figcaption>
+      </figure>
+    </article>
+
+    <article id="s2">
+      <div class="kicker">مرحلهٔ ۲ — تخصص‌ها یا سرویس‌های آن حوزه</div>
+      <h2>لیست باز می‌شود و یکی را انتخاب می‌کنیم</h2>
+      <p>بعد از Specialistiche، تخصص‌های همان حوزه با آیکون می‌آیند. در عکس‌ها این‌ها خوانده شد: قلب، پوست، دندان، و شنوایی. مسیر مثال از اینجا به شنوایی می‌رود.</p>
+      <div class="pair">
+        <figure>
+          <img src="02-specialties-wide.png" alt="نمای دور از فهرست تخصص‌ها" />
+          <figcaption>همان صفحه، از دور.</figcaption>
+        </figure>
+        <figure>
+          <img src="02-specialties-close.png" alt="قلب، پوست، دندان و گوش" />
+          <figcaption>نزدیک‌تر. فلش سبز برگشت است. انگشت سمت گوش است.</figcaption>
+        </figure>
+      </div>
+      <table>
+        <tr><th>روی صفحه</th><th>یعنی</th></tr>
+        <tr><td>TELE ECG CARDIOLOGIA</td><td>قلب</td></tr>
+        <tr><td>TELEDERMATOLOGIA</td><td>پوست</td></tr>
+        <tr><td>TELEODONTOIATRIA</td><td>دندان</td></tr>
+        <tr><td>گوش با موج صدا</td><td>شنوایی. نوشته‌اش در عکس بریده است</td></tr>
+      </table>
+    </article>
+
+    <article id="s3">
+      <div class="kicker">مرحلهٔ ۳ — خدمات همان تخصص</div>
+      <h2>حوزهٔ شنوایی، بعد انتخاب خدمت</h2>
+      <p>انتخاب شنوایی بوده. حالا خدمات خودِ شنوایی لیست می‌شود. عنوان صفحه می‌گوید یکی را انتخاب کن. مثالِ انتخاب: آزمایش شنوایی. روی صفحه نوشته شده <b>Esame audiometrico</b>.</p>
+      <div class="pair">
+        <figure>
+          <img src="03-three-colors.png" alt="سه نوار سبز و زرد و قرمز" />
+          <figcaption>سه خدمت، هر کدام یک نوار رنگی.</figcaption>
+        </figure>
+        <figure>
+          <img src="03-finger-yellow.png" alt="انگشت روی آزمایش شنوایی" />
+          <figcaption>انگشت روی نوار زرد، یعنی Esame audiometrico.</figcaption>
+        </figure>
+      </div>
+      <table>
+        <tr><th>رنگ</th><th>نوشته</th><th>خدمت</th></tr>
+        <tr><td>سبز</td><td>Esame Otoscopico</td><td>دیدن داخل گوش</td></tr>
+        <tr><td>زرد</td><td>Esame audiometrico</td><td>آزمایش شنوایی</td></tr>
+        <tr><td>قرمز</td><td>Prescrizione</td><td>نسخه</td></tr>
+      </table>
+    </article>
+
+    <article id="s4">
+      <div class="kicker">مرحلهٔ ۴ — صفحهٔ خودِ آن خدمت</div>
+      <h2>توضیح کار برنامه، و دکمهٔ باز کردن</h2>
+      <p>این صفحهٔ تخصصی همان انتخاب است. می‌گوید این کار چیست و با برنامه چطور شروع شود. در عکس، عکسِ جعبهٔ واقعی است، فلش قرمز وسیله را نشان می‌دهد، دو جمله دستور می‌دهد، و دکمهٔ زرد برنامه را باز می‌کند: <b>AVVIA TELEAUDIOLOGIA</b>.</p>
+      <figure>
+        <img src="04-arrow-start.png" alt="عکس جعبه با فلش قرمز و دکمهٔ زرد شروع" />
+        <figcaption>محتوای کار با برنامه اینجاست. دکمه، باز کردن برنامه است.</figcaption>
+      </figure>
+    </article>
+
+    <section class="after">
+      <h2>بعد از دکمه، برنامهٔ معاینه است</h2>
+      <p>نمودار پایین دیگر یکی از چهار مرحله نیست. نتیجهٔ زدن دکمه است. پوستهٔ Otofarma این صفحه را نمی‌سازد. برنامهٔ شنوایی خودش باز شده.</p>
+      <figure>
+        <img src="05-audiogram.png" alt="نمودار آزمایش شنوایی بعد از باز شدن برنامه" />
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
